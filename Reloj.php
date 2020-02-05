@@ -1,5 +1,6 @@
 <?php
-function saluda(){
+
+function saluda($nombre){
     $hora = date("H");
     $minutos = date("i");
     $segundos = date("s");
@@ -46,7 +47,7 @@ function saluda(){
     }else {
         $mes = "Diciembre";
     }
-    echo "$timelapse, son las $hora:$minutos:$segundos  horas del $dia de $mes del $año";
+    echo "<p>$timelapse, $nombre son las $hora:$minutos:$segundos  horas del $dia de $mes del $año</p>";
 }
-saluda();
+saluda("Luis");
 ?>
