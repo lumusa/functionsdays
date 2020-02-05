@@ -17,7 +17,7 @@ function dimeEstacion(){
         $estacion = 'invierno';
         # code...
     }
-    return $estacion;
+    return "$estacion";
 }
 dimeEstacion();
 ?>
