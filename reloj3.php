@@ -1,5 +1,12 @@
 <?php
-
+ $bool = false;
+ if (!$bool) {
+    echo "<form action = 'index.php' method = 'get'>
+    <p> Nombre <input type ='text' name = 'nombre' ></p>
+    <p><input type = 'submit' value = 'enviar'</p> ";
+    $nombre = $_GET['nombre'];
+    $bool = true;
+ }else{
 function saluda($nombre){
     $hora = date("H");
     $minutos = date("i");
@@ -10,14 +17,13 @@ function saluda($nombre){
     if ($hora >= 7 && $hora< 11) {
         # code...
         $timelapse = "Buenos días";
-        if ($hora == 12 && $minutos <30) {
-            $timelapse = "Buenos dias";
         }
+        elseif ($hora == 12 && $minutos <30) {
+            $timelapse = "Buenos dias";
     }elseif ($hora > 13 && $hora < 19) {
         $timelapse= "Buenas tardes";
-        if ($hora == 12 && $minutos >= 30) {
+    }elseif ($hora == 12 && $minutos >= 30) {
             $timelapse = "Buenas tardes";
-        }
     }else {
         $timelapse = "buenas noches" ;
     }
@@ -49,5 +55,6 @@ function saluda($nombre){
     }
     echo "<p>$timelapse, $nombre son las $hora:$minutos:$segundos  horas del $dia de $mes del $año</p>";
 }
-saluda("Luis");
+saluda($nombre);
+}
 ?>
