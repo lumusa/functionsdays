@@ -1,5 +1,5 @@
 <?php
-function dimeEstacion(){
+function dimeEstacion2(){
     $dia = date('z');
     if ($dia < 79) {
         echo "Estamos en invierno";
@@ -18,5 +18,5 @@ function dimeEstacion(){
         # code...
     }
 }
-dimeEstacion();
+dimeEstacion2();
 ?>

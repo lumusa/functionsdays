@@ -9,5 +9,5 @@ function DameModulo($x, $y,$z){
     echo "El vector de coordenadas de X = $vector[0], Y = $vector[1], Z = $vector[2] es $raiz";
 
 }
-DameModulo('2','0','0');
+DameModulo('3','1','1');
 ?>

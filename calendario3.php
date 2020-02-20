@@ -1,5 +1,5 @@
 <?php
-function dimeEstacion(){
+function dimeEstacion3(){
     $dia = date('z');
     if ($dia < 79) {
        $estacion = 'invierno';
@@ -19,5 +19,5 @@ function dimeEstacion(){
     }
     return "$estacion";
 }
-dimeEstacion();
+dimeEstacion3();
 ?>

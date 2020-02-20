@@ -4,7 +4,7 @@ $mes = date("n");
 echo date("j/n/y");
 $dia = date("j");
 $mes = date("n");
-function dimeEstacion($dia, $mes){
+function dimeEstacion4($dia, $mes){
     $dia = date("j");
     $mes = date("n");
     echo "</br>";
@@ -53,5 +53,5 @@ switch ($dia) {
         echo "Es invierno";
 }
 }
-dimeEstacion(5,7);
+dimeEstacion4(5,7);
 ?>

@@ -9,9 +9,10 @@ function CalculaDistancia($x, $y, $z, $i, $j, $k){
     $potencia2 = sqrt(pow($vector2[0],2) + pow($vector2[1],2) + pow($vector2[2],2));
     $distanciamod =abs($potencia - $potencia2);
     $pruebavec = array ($x - $i, $y-$j, $z - $k);
+    $potenciaf = sqrt(pow($pruebavec[0],2) + pow($pruebavec[1],2) + pow($pruebavec[2],2));
     echo "<h1> Distancia</h1>";
     echo  "<h2> Distancia modular</h2>
-    <p>La distancia modular, siempre es positiva y en este caso es $distanciamod</p>";
+    <p>La distancia modular, siempre es positiva y en este caso es $potenciaf</p>";
     echo "<h2> Distancia Vectorial</h2>
     <p>La distancia vectorial, tiene 3 puntos, que si pueden ser negativos, X, Y, Z: $pruebavec[0], $pruebavec[1], $pruebavec[2]</p>";
 }
